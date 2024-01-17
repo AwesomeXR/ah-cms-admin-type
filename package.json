@@ -1,0 +1,20 @@
+{
+  "name": "ah-cms-admin-type",
+  "version": "1.1.14",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ci": "prettier --check src && tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.build.json --outDir dist",
+    "release": "npm run ci && npm run build && rm -rf dist/* && npm run build && release-it"
+  },
+  "dependencies": {
+    "ah-api-type": "^3.0.7"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "typescript": "^4.2.4"
+  }
+}
