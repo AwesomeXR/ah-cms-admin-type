@@ -1,6 +1,6 @@
 {
   "name": "ah-cms-admin-type",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "main": "dist/index.js",
   "files": [
     "dist"
